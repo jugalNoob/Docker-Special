@@ -3,7 +3,7 @@ const express=require("express")
 
 const app=express()
 
-const port=3000
+const port=9000
 
 
 app.get("/"  , (req,res)=>{
@@ -13,10 +13,11 @@ app.get("/"  , (req,res)=>{
         message:"Hello, World karan i am jugal sharma",
         timestamp:new Date().toISOString(),
         age:6969453456465564,
-        gender:"maled"
+        gender:"maled",
+        kanika:"i love you"
     }
 
-    res.send(data)
+    res.send(data )
 })
 
 
